@@ -21,6 +21,11 @@ const projects: Project[] = [
     techs: ["HTML","CSS","Python"],
     link: "https://github.com/PustakP/BookTunes/",
   },
+  {
+    title: "backlink-identifier",
+    techs: ["HTML","CSS","Javascript"],
+    link: "https://github.com/kshitijk4poor/backlink",
+  },
 ];
 
 export default projects;

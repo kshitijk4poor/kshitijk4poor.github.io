@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Kshitij 👋",
   // profile: "/profile.webp",
   description:
-    "I am a 19 year old self-taught *frontend developer* and *UI/UX designer*, currently dabbling with *golang* and *AI/ML*.",
+    "I am a 19 year old self-taught *frontend developer* and *UI/UX designer*. learning *cybersecurity*, *machine learning*. currently dabbling with *golang*",
   socials: [
     {
       label: "X",
