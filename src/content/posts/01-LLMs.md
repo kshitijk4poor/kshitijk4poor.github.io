@@ -9,7 +9,7 @@ LLMs are like autocomplete tools (they predict the next word based on the text y
 
 LLMs are lare language models that are trained on milions of data/text to give human like responses. the model uses the training data to understand the patterns and relationship between the words to predict the next word.
 
-what are [tokens](src\content\posts\03-tokens.md)?
+what are [tokens](https://kshitijk4poor.github.io/posts/tokens)?
 
 tokens are numerical representation of words (not really but like parts of words). numbers are used used instead of alphabets to denote because they are easier to denote token IDs and easier to process.
 
