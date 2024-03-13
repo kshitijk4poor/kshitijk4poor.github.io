@@ -7,20 +7,19 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "Dictionary App",
-    techs: ["ReactJS (NextJS)", "react-query", "zod"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    title: "Durdle",
+    techs: ["HTML", "CSS", "Python"],
+    link: "https://github.com/Devansh3712/durdle",
   },
   {
-    title: "Portfolio / Lina BLIDI",
-    techs: ["ReactJS (NextJS)", "TypeScript"],
-    link: "https://www.linablidi.fr/",
+    title: "Augmy",
+    techs: ["flutter"],
+    link: "https://github.com/Arjun-Mishra-312/augmy",
   },
   {
-    title: "Portfolio / Template",
-    techs: ["Astro"],
-    link: "/",
-    isComingSoon: true,
+    title: "Booktunes",
+    techs: ["HTML","CSS","Python"],
+    link: "https://github.com/PustakP/BookTunes/",
   },
 ];
 
