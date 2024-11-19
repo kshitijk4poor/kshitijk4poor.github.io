@@ -41,6 +41,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^7.3.1
         version: 7.18.0(eslint@8.57.1)(typescript@5.6.3)
+      '@vercel/analytics':
+        specifier: ^1.4.1
+        version: 1.4.1
       astro:
         specifier: ^4.5.6
         version: 4.16.13(rollup@4.27.3)(typescript@5.6.3)
