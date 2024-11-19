@@ -1,0 +1,40 @@
+---
+import Container from "@components/Container.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import { HOME } from "@consts";
+
+// import { getCollection } from "astro:content";
+// import ArrowCard from "@components/ArrowCard.astro";
+// import Link from "@components/Link.astro";
+// import { dateRange } from "@lib/utils";
+// import { SITE, SOCIALS } from "@consts";
+
+// const blog = (await getCollection("blog"))
+//   .filter(post => !post.data.draft)
+//   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+//   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
+
+// const projects = (await getCollection("projects"))
+//   .filter(project => !project.data.draft)
+//   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+//   .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
+
+// const allwork = (await getCollection("work"))
+//   .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
+//   .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
+
+// const work = await Promise.all(
+//   allwork.map(async (item) => {
+//     const { Content } = await item.render();
+//     return { ...item, Content };
+//   })
+// );
+---
+
+<PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+  <Container>
+    <div class="h-[70vh] flex items-center justify-center">
+      <h1 class="text-4xl font-bold text-black dark:text-white">Coming soon...</h1>
+    </div>
+  </Container>
+</PageLayout>
