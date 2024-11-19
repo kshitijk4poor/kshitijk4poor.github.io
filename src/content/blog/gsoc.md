@@ -2,7 +2,6 @@
 title: "Google Summer of Code"
 description: "Learnings and everything I took away with me."
 date: "Nov 19 2024"
-draft: false
 ---
 
 ## Learnings
