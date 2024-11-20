@@ -9,67 +9,70 @@ importers:
   .:
     dependencies:
       '@astrojs/check':
-        specifier: ^0.5.9
+        specifier: ^0.5.10
         version: 0.5.10(typescript@5.6.3)
       '@astrojs/mdx':
-        specifier: ^2.2.0
+        specifier: ^2.3.1
         version: 2.3.1(astro@4.16.13(rollup@4.27.3)(typescript@5.6.3))
       '@astrojs/rss':
-        specifier: ^4.0.5
+        specifier: ^4.0.9
         version: 4.0.9
       '@astrojs/sitemap':
-        specifier: ^3.1.1
+        specifier: ^3.2.1
         version: 3.2.1
       '@astrojs/tailwind':
-        specifier: ^5.1.0
+        specifier: ^5.1.2
         version: 5.1.2(astro@4.16.13(rollup@4.27.3)(typescript@5.6.3))(tailwindcss@3.4.15)
       '@astrojs/vercel':
         specifier: ^7.8.2
         version: 7.8.2(astro@4.16.13(rollup@4.27.3)(typescript@5.6.3))
       '@fontsource/inter':
-        specifier: ^5.0.17
+        specifier: ^5.1.0
         version: 5.1.0
       '@fontsource/lora':
-        specifier: ^5.0.16
+        specifier: ^5.1.0
         version: 5.1.0
       '@tailwindcss/typography':
-        specifier: ^0.5.10
+        specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.15)
       '@typescript-eslint/eslint-plugin':
-        specifier: ^7.3.1
+        specifier: ^7.18.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)
       '@typescript-eslint/parser':
-        specifier: ^7.3.1
+        specifier: ^7.18.0
         version: 7.18.0(eslint@8.57.1)(typescript@5.6.3)
       '@vercel/analytics':
         specifier: ^1.4.1
         version: 1.4.1
       astro:
-        specifier: ^4.5.6
+        specifier: ^4.16.13
         version: 4.16.13(rollup@4.27.3)(typescript@5.6.3)
       clsx:
-        specifier: ^2.1.0
+        specifier: ^2.1.1
         version: 2.1.1
       eslint:
-        specifier: ^8.57.0
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-plugin-astro:
         specifier: ^0.32.0
         version: 0.32.0(eslint@8.57.1)
       eslint-plugin-jsx-a11y:
-        specifier: ^6.8.0
+        specifier: ^6.10.2
         version: 6.10.2(eslint@8.57.1)
+      font-awesome:
+        specifier: ^4.7.0
+        version: 4.7.0
       sharp:
-        specifier: ^0.33.3
+        specifier: ^0.33.5
         version: 0.33.5
       tailwind-merge:
-        specifier: ^2.2.2
+        specifier: ^2.5.4
         version: 2.5.4
       tailwindcss:
-        specifier: ^3.4.1
+        specifier: ^3.4.15
         version: 3.4.15
       typescript:
-        specifier: ^5.4.2
+        specifier: ^5.6.3
         version: 5.6.3
 
 packages:
@@ -1515,6 +1518,10 @@ packages:
   flattie@1.1.1:
     resolution: {integrity: sha512-9UbaD6XdAL97+k/n+N7JwX46K/M6Zc6KcFYskrYL8wbBV/Uyk0CTAMY0VT+qiK5PM7AIc9aTWYtq65U7T+aCNQ==}
     engines: {node: '>=8'}
+
+  font-awesome@4.7.0:
+    resolution: {integrity: sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg==}
+    engines: {node: '>=0.10.3'}
 
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
@@ -5021,6 +5028,8 @@ snapshots:
   flatted@3.3.2: {}
 
   flattie@1.1.1: {}
+
+  font-awesome@4.7.0: {}
 
   for-each@0.3.3:
     dependencies:
