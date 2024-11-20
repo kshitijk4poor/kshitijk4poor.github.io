@@ -15,7 +15,8 @@ import BackToTop from "@components/BackToTop.astro";
       <div>
         &copy; 2024 {`|`} {SITE.NAME}
       </div>
-      <div class="flex gap-4">
+      <div class="flex flex-wrap gap-1 items-center">
+        <div class="flex gap-4">
         {SOCIALS.map(social => (
           <a 
             href={social.HREF}
@@ -24,8 +25,9 @@ import BackToTop from "@components/BackToTop.astro";
             aria-label={`${SITE.NAME} on ${social.NAME}`}
           >
             {social.NAME}
-          </a>
-        ))}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </Container>
