@@ -1,40 +1,46 @@
 ---
+import { getCollection } from "astro:content";
 import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
-import { HOME } from "@consts";
-
-// import { getCollection } from "astro:content";
-// import ArrowCard from "@components/ArrowCard.astro";
-// import Link from "@components/Link.astro";
-// import { dateRange } from "@lib/utils";
-// import { SITE, SOCIALS } from "@consts";
-
-// const blog = (await getCollection("blog"))
-//   .filter(post => !post.data.draft)
-//   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-//   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
-
-// const projects = (await getCollection("projects"))
-//   .filter(project => !project.data.draft)
-//   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-//   .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
-
-// const allwork = (await getCollection("work"))
-//   .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
-//   .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
-
-// const work = await Promise.all(
-//   allwork.map(async (item) => {
-//     const { Content } = await item.render();
-//     return { ...item, Content };
-//   })
-// );
+import ArrowCard from "@components/ArrowCard.astro";
+import Link from "@components/Link.astro";
+import { SITE, HOME, SOCIALS } from "@consts";
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <div class="h-[70vh] flex items-center justify-center">
-      <h1 class="text-4xl font-bold text-black dark:text-white">Coming soon...</h1>
+    <div class="flex flex-col md:flex-row items-start gap-8 py-8">
+      <div class="flex-1">
+        <h1 class="text-3xl font-bold mb-4 prose dark:prose-invert">hi, i'm kshitij 👋🏻</h1>
+        <div class="prose dark:prose-invert">
+          <p class="text-lg">
+            a <span class="font-semibold">full stack developer</span>, currently learning about <span class="font-semibold">reinforcement learning</span>. 
+            <br> i worked under <span class="font-semibold">honeynet for google summer of code 2024</span>.
+          </p>
+          
+          <p class="text-lg mt-4">
+            i'm an undergrad student pursuing <span class="font-semibold">cs and cybersecurity</span>, and i'm working on projects involving 
+            <span class="font-semibold">machine learning and rag systems</span>. and i'm particularly interested in:
+          </p>
+
+          <ul class="list-disc pl-6 mt-4 space-y-2">
+            <li><span class="font-semibold">systems</span></li>
+            <li><span class="font-semibold">compiler design</span></li>
+            <li><span class="font-semibold">cryptography</span></li>
+            <li><span class="font-semibold">distributed systems</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="md:w-[300px] shrink-0">
+        <img
+          src="kshitij.jpeg"
+          alt="Profile picture"
+          class="rounded-lg border-2 border-gray-200 dark:border-gray-700"
+          width="300"
+          height="400"
+        />
+      </div>
     </div>
   </Container>
 </PageLayout>
