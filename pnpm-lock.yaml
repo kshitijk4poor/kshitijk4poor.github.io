@@ -59,9 +59,6 @@ importers:
       eslint-plugin-jsx-a11y:
         specifier: ^6.10.2
         version: 6.10.2(eslint@8.57.1)
-      font-awesome:
-        specifier: ^4.7.0
-        version: 4.7.0
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -1518,10 +1515,6 @@ packages:
   flattie@1.1.1:
     resolution: {integrity: sha512-9UbaD6XdAL97+k/n+N7JwX46K/M6Zc6KcFYskrYL8wbBV/Uyk0CTAMY0VT+qiK5PM7AIc9aTWYtq65U7T+aCNQ==}
     engines: {node: '>=8'}
-
-  font-awesome@4.7.0:
-    resolution: {integrity: sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg==}
-    engines: {node: '>=0.10.3'}
 
   for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
@@ -5028,8 +5021,6 @@ snapshots:
   flatted@3.3.2: {}
 
   flattie@1.1.1: {}
-
-  font-awesome@4.7.0: {}
 
   for-each@0.3.3:
     dependencies:
