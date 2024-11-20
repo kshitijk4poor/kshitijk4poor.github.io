@@ -62,8 +62,8 @@ import { SITE } from "@consts";
   const darkIcon = document.getElementById('dark-icon');
 
   function updateIcon(isDark: boolean) {
-    lightIcon.classList.toggle('hidden', !isDark);
-    darkIcon.classList.toggle('hidden', isDark);
+    lightIcon?.classList.toggle('hidden', !isDark);
+    darkIcon?.classList.toggle('hidden', isDark);
   }
 
   // Check system preference initially
