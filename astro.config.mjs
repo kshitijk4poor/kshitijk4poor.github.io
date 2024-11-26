@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
-  site: "https://astro-nano-demo.vercel.app",
+  site: "https://kshitijk.com",
   integrations: [mdx(), sitemap(), tailwind()],
   output: "server",
   adapter: vercel(),
