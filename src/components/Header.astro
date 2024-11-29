@@ -56,33 +56,43 @@ import { SITE } from "@consts";
   </Container>
 </header>
 
-<script>
-  const themeToggle = document.getElementById('theme-toggle');
-  const lightIcon = document.getElementById('light-icon');
-  const darkIcon = document.getElementById('dark-icon');
+<script is:inline>
+  function setupThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const lightIcon = document.getElementById('light-icon');
+    const darkIcon = document.getElementById('dark-icon');
 
-  function updateIcon(isDark: boolean) {
-    lightIcon?.classList.toggle('hidden', !isDark);
-    darkIcon?.classList.toggle('hidden', isDark);
+    if (!themeToggle || !lightIcon || !darkIcon) return;
+
+    function updateIcon(isDark) {
+      lightIcon.classList.toggle('hidden', !isDark);
+      darkIcon.classList.toggle('hidden', isDark);
+    }
+
+    // Check system preference initially
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.classList.toggle('dark', prefersDark);
+    updateIcon(prefersDark);
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      updateIcon(isDark);
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Check for saved preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      const isDark = savedTheme === 'dark';
+      document.documentElement.classList.toggle('dark', isDark);
+      updateIcon(isDark);
+    }
   }
 
-  // Check system preference initially
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  document.documentElement.classList.toggle('dark', prefersDark);
-  updateIcon(prefersDark);
+  // Run on initial load
+  setupThemeToggle();
 
-  // Toggle theme
-  themeToggle?.addEventListener('click', () => {
-    const isDark = document.documentElement.classList.toggle('dark');
-    updateIcon(isDark);
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-
-  // Check for saved preference
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    const isDark = savedTheme === 'dark';
-    document.documentElement.classList.toggle('dark', isDark);
-    updateIcon(isDark);
-  }
+  // Re-run on view transitions
+  document.addEventListener('astro:page-load', setupThemeToggle);
 </script>
