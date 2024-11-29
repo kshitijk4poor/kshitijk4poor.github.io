@@ -6,14 +6,13 @@ import { SITE } from "@consts";
 import Oneko from "@components/Oneko.astro";
 import Analytics from "@vercel/analytics/astro";
 
-type Props = {
+interface Props {
   title: string;
   description: string;
-};
+}
 
 const { title, description } = Astro.props;
 ---
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,3 +28,4 @@ const { title, description } = Astro.props;
     <Analytics />
   </body>
 </html>
+
